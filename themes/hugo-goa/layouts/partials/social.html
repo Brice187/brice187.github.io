@@ -1,0 +1,65 @@
+<section id="social-pane" class="text-center social">
+  {{ with .Site.Params.social.twitter }}
+  <a href="https://twitter.com/{{.}}" aria-label="Twitter" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+  {{ end }}
+  {{ with .Site.Params.social.github }}
+  <a href="https://github.com/{{.}}" aria-label="Github" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
+  {{ end }}
+  {{ with .Site.Params.social.stackoverflow }}
+  <a href="https://stackoverflow.com/users/{{.}}" aria-label="StackOverflow" target="_blank"><i class="fab fa-stack-overflow" aria-hidden="true"></i></a>
+  {{ end }}
+  {{ with .Site.Params.social.xing }}
+  <a href="https://www.xing.com/profile/{{.}}" aria-label="Xing" target="_blank"><i class="fab fa-xing" aria-hidden="true"></i></a>
+  {{ end }}
+  {{ with .Site.Params.social.keybase}}
+  <a href="https://keybase.io/{{.}}" aria-label="Keybase" target="_blank"><i class="fab fa-keybase" aria-hidden="true"></i></a>
+  {{ end }}
+  {{ with .Site.Params.social.strava}}
+  <a href="https://www.strava.com/athletes/{{.}}" aria-label="Strava" target="_blank"><i class="fab fa-strava" aria-hidden="true"></i></a>
+  {{ end }}
+</section>
+{{ if .Site.Params.extra.socialmarkup }}
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Person",
+  "name": "{{ .Site.Params.author }}",
+  "url": "{{ .Site.Params.baseURL }}",
+  "sameAs": [
+    {{ with .Site.Params.social.twitter }}"https://twitter.com/{{.}}",{{ end }}
+    {{ with .Site.Params.social.google }}"https://plus.google.com/{{.}}/about",{{ end }}
+    {{ with .Site.Params.social.googlescholar}}"https://scholar.google.com/citations?user={{.}}"{{ end }}
+    {{ with .Site.Params.social.goodreads }}"https://www.goodreads.com/user/show/{{.}}",{{ end }}
+    {{ with .Site.Params.social.lastfm }}"https://www.last.fm/user/{{.}}/",{{ end }}
+    {{ with .Site.Params.social.facebook }}"https://facebook.com/{{.}}",{{ end }}
+    {{ with .Site.Params.social.github }}"https://github.com/{{.}}",{{ end }}
+    {{ with .Site.Params.social.instagram }}"https://instagram.com/{{.}}",{{ end }}
+    {{ with .Site.Params.social.linkedin }}"https://linkedin.com/in/{{.}}",{{ end }}
+    {{ with .Site.Params.social.stackoverflow }}"https://stackoverflow.com/users/{{.}}",{{ end }}
+    {{ with .Site.Params.social.medium}}"https://medium.com/{{.}}",{{ end }}
+    {{ with .Site.Params.social.devto}}"https://dev.to/{{.}}",{{ end }}
+    {{ with .Site.Params.social.angellist}}"https://angel.co/{{.}}",{{ end }}
+    {{ with .Site.Params.social.xing }}"https://www.xing.com/profile/{{.}}",{{ end }}
+    {{ with .Site.Params.social.gitlab}}"https://gitlab.com/{{.}}",{{ end }}
+    {{ with .Site.Params.social.bitbucket}}"https://bitbucket.org/{{.}}",{{ end }}
+    {{ with .Site.Params.social.fivehundredpx}}"https://500px.com/{{.}}",{{ end }}
+    {{ with .Site.Params.social.flickr}}"https://flickr.com/photos/{{.}}",{{ end }}
+    {{ with .Site.Params.social.foursquare}}"https://foursquare.com/{{.}}",{{ end }}
+    {{ with .Site.Params.social.hackernews}}"https://news.ycombinator.com/user?id={{.}}",{{ end }}
+    {{ with .Site.Params.social.kickstarter}}"https://kickstarter.com/{{.}}",{{ end }}
+    {{ with .Site.Params.social.patreon}}"https://patreon.com/{{.}}",{{ end }}
+    {{ with .Site.Params.social.pintrest}}"https://pintrest.com/{{.}}",{{ end }}
+    {{ with .Site.Params.social.steam}}"https://steamcommunity.com/id/{{.}}",{{ end }}
+    {{ with .Site.Params.social.reddit}}"https://www.reddit.com/user/{{.}}",{{ end }}
+    {{ with .Site.Params.social.snapchat}}"https://snapchat.com{{.}}",{{ end }}
+    {{ with .Site.Params.social.youtube}}"https://youtube.com/user/{{.}}",{{ end }}
+    {{ with .Site.Params.social.keybase}}"https://keybase.io/{{.}}",{{ end }}
+    {{ with .Site.Params.social.twitch}}"https://www.twitch.tv/{{.}}",{{ end }}
+    {{ with .Site.Params.social.soundcloud}}"https://soundcloud.com/{{.}}",{{ end }}
+    {{ with .Site.Params.social.tumblr}}"https://{{.}}.tumblr.com",{{ end }}
+    {{ with .Site.Params.social.strava}}"https://www.strava.com/athletes/{{.}}",{{ end }}
+    "{{ .Site.Params.baseURL }}"
+  ]
+}
+</script>
+{{ end }}
