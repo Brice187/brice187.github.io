@@ -23,8 +23,8 @@ enableRobotsTXT = true
 [params]
 author = "Lars Kerick"
 intro = "YAML Engineer"
-description = "Now @Pied Piper. Previously @Hacker Hostel, @Bachmanity and @Aviato. <br/> \"What is F times 5? It's Fleventy-five.\""
-authorimage = "headshot.jpg"
+description = "I run containers for a living"
+authorimage = "avatar.png"
 dateformat = "Jan 2, 2006"
 
 ## Site Meta Settings
@@ -35,7 +35,7 @@ keywords = "minimalist,blog,goa,hugo,developer"
 ## Social Accounts
 [params.social]
 github = "Brice187"
-xing = "<username>"
+xing = "Lars_Kerick"
 twitter = "lk012"
 keybase = "<username>"
 strava = "<username>"
