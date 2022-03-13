@@ -36,7 +36,7 @@ technical debt - Push local docker images to your (air-gapped) k3s cluster
 <li><a href=#introduction>Introduction</a></li>
 <li><a href=#using-local-images>Using local images</a>
 <ul>
-<li><a href=#deploy-local-images-to-hosts-in-your-network>Deploy local images to hosts in your network&lt;</a></li>
+<li><a href=#deploy-local-images-to-hosts-in-your-network>Deploy local images to hosts in your network</a></li>
 </ul>
 </li>
 <li><a href=#bonus-automating-image-deployment-with-gitlab-cicd>Bonus: Automating image deployment with Gitlab CI/CD</a></li>
@@ -95,7 +95,7 @@ my_app for example) into containerd runtime with the following command <code>doc
 next chapter to provision your whole cluster.</p>
 <figure><img src=/img/container.jpg width=750>
 </figure>
-<h3 id=deploy-local-images-to-hosts-in-your-network>Deploy local images to hosts in your network&lt;</h3>
+<h3 id=deploy-local-images-to-hosts-in-your-network>Deploy local images to hosts in your network</h3>
 <p>Make sure that you have ssh access to the k3s hosts from the workstation or dev-server where you build the image.</p>
 <p>Now create a system user/group called <code>k3s</code> for the image deployment on every kubelet node (or ask your sysadmin nicely).
 Make sure you put your public ssh key into the <code>/home/k3s/.ssh/authorized_keys</code> and do a
