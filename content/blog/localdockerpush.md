@@ -8,7 +8,7 @@ showcomments = true
 slug = ""
 tags = ["k3s", "docker", "local"]
 title = "Push local docker images to your (air-gapped) k3s cluster"
-description = "A post about the amazingness of Gavin Belson"
+description = "Get rid of the container registry"
 
 +++
 
@@ -76,7 +76,7 @@ next chapter to provision your whole cluster.
     width="750"
     margin="auto"
 >}}
-### Deploy local images to hosts in your network<
+### Deploy local images to hosts in your network
 
 Make sure that you have ssh access to the k3s hosts from the workstation or dev-server where you build the image.
 
